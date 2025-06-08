@@ -37,14 +37,7 @@
 
 ## 🛠 Usage
 
-### 🔸 If you have AutoHotkey:
-1. Download or clone this repo
-2. Run `batteryBuddy.ahk`
-
-
-### 🔸 Without AutoHotkey?
-
-📦 Just download the `.exe` from the [**Releases section**](https://github.com/AryanXPatel/BatteryBuddy/releases), no installation needed:
+🔸 Just download the `.exe` from the [**Releases section**](https://github.com/AryanXPatel/BatteryBuddy/releases), no installation needed:
 
 1.  Go to [Releases](https://github.com/AryanXPatel/BatteryBuddy/releases)
     
@@ -52,14 +45,6 @@
     
 3.  Double-click to run — it stays in your system tray and starts monitoring!
 
----
-
-## 📦 Build `.exe` Yourself (Optional)
-
-If you'd like to build your own `.exe`:
-1. Install [AutoHotkey](https://www.autohotkey.com/)
-2. Right-click `batteryBuddy.ahk` → “Compile Script”
-3. The `.exe` will be generated in the same folder
 
 ---
 
