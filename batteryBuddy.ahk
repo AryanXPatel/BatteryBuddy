@@ -1,7 +1,7 @@
 #Persistent
 #SingleInstance, Force
 SetTimer, CheckBattery, 5000         ; Every 5 seconds
-SetTimer, ReminderCheck, 120000      ; Every 2 minutes (120000 ms)
+SetTimer, ReminderCheck, 120000      ; Every 2 minutes
 
 Menu, Tray, NoStandard
 Menu, Tray, Add, Mute 30 Minutes, Mute30
@@ -11,7 +11,7 @@ Menu, Tray, Add
 Menu, Tray, Add, Show Status, ShowCurrentStatus
 Menu, Tray, Add, Exit, ExitScript
 Menu, Tray, Tip, Battery Notifier
-Menu, Tray, Icon, %A_ScriptDir%\icons\battery.ico
+Menu, Tray, Icon, %A_ScriptDir%\icons\bluebattery.ico
 
 notifiedHigh := false
 notifiedLow := false
@@ -29,6 +29,7 @@ CheckBattery:
     ; Icon handling
     greenIcon := A_ScriptDir "\icons\greenbattery.ico"
     redIcon := A_ScriptDir "\icons\redbattery.ico"
+    neutralIcon := A_ScriptDir "\icons\bluebattery.ico"
     newIcon := plugged ? greenIcon : redIcon
 
     if (currentIcon != newIcon && FileExist(newIcon)) {
@@ -109,18 +110,21 @@ ShowToast(title, message, iconFile := "") {
 }
 
 Mute30:
+    neutralIcon := A_ScriptDir "\icons\bluebattery.ico"
     muteUntil := A_TickCount + 1800000 ; 30 minutes
-    ShowToast("Muted", "Notifications paused for 30 minutes")
+    ShowToast("Muted", "Notifications paused for 30 minutes", neutralIcon)
 return
 
 Mute60:
+    neutralIcon := A_ScriptDir "\icons\bluebattery.ico"
     muteUntil := A_TickCount + 3600000 ; 1 hour
-    ShowToast("Muted", "Notifications paused for 1 hour")
+    ShowToast("Muted", "Notifications paused for 1 hour", neutralIcon)
 return
 
 Unmute:
+    neutralIcon := A_ScriptDir "\icons\bluebattery.ico"
     muteUntil := 0
-    ShowToast("Unmuted", "Battery notifications resumed")
+    ShowToast("Unmuted", "Battery notifications resumed", neutralIcon)
 return
 
 ShowCurrentStatus:
@@ -128,7 +132,8 @@ ShowCurrentStatus:
     percent := battery[1]
     plugged := battery[2]
     status := plugged ? "Plugged In (Charging)" : "Unplugged (On Battery)"
-    MsgBox, 64, Battery Status, Battery Level: %percent%`%`nCharger Status: %status%
+    neutralIcon := A_ScriptDir "\icons\bluebattery.ico"
+    ShowToast("Battery Status", "Battery Level: " percent "%`nStatus: " status, neutralIcon)
 return
 
 ExitScript:
