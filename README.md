@@ -20,29 +20,6 @@
   - ⏱️ 1 hour
   - 🔈 Unmute anytime
 
----
-
-## 📂 File Structure
-
-BatteryBuddy/
-│
-├── batteryBuddy.ahk ; Source script  
-├── batteryBuddy.exe ; Compiled executable  
-├── README.md
-│
-├── icons/
-│   ├── battery.ico
-│   ├── greenbattery.ico
-│   └── redbattery.ico
-│
-└── screenshots/
-    ├── tray-green.png
-    ├── tray-red.png
-    ├── notify-battery-full.png
-    ├── notify-still-at-80.png
-    ├── notify-disconnected.png
-    └── notify-battery-low.png
-
 
 ---
 
