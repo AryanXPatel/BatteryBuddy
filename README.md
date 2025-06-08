@@ -48,9 +48,13 @@ BatteryBuddy/
 
 ## 🖼️ Screenshots
 
-| Tray Icon | Battery Full | Still 80% | Disconnected | Battery Low |
-|----------|--------------|------------|--------------|--------------|
-| ![Green](screenshots/tray-green.png) | ![Full](screenshots/notify-battery-full.png) | ![Still](screenshots/notify-still-at-80.png) | ![Disconnected](screenshots/notify-disconnected.png) | ![Low](screenshots/notify-battery-low.png) |
+| Tray Icon (On Battery)                | Battery Low @ 20%                                 | Still Not Charging @ 20%                         | Charger Disconnected @ 81%                              |
+| ------------------------------------- | ------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------- |
+| ![Tray Red](screenshots/tray-red.png) | ![Battery Low](screenshots/notify-plug-in-20.png) | ![Still 20%](screenshots/notify-still-at-20.png) | ![Disconnected](screenshots/notify-disconnected-81.png) |
+
+| Tray Icon (Charging)                      | Battery Full @ 80%                                   | Still Charging @ 80%                             | Charger Connected                              |
+| ----------------------------------------- | ---------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
+| ![Tray Green](screenshots/tray-green.png) | ![Battery Full](screenshots/notify-battery-full.png) | ![Still 80%](screenshots/notify-still-at-80.png) | ![Connected](screenshots/notify-connected.png) |
 
 ---
 
