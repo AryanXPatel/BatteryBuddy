@@ -25,9 +25,9 @@
 
 ## 🖼️ Screenshots
 
-| Tray Icon (On Battery)                | Battery Low @ 20%                                 | Still Not Charging @ 20%                         | Charger Disconnected @ 81%                              |
+| Tray Icon (On Battery)                | Battery Low @ 25%                                 | Still Not Charging @ 25%                         | Charger Disconnected @ 81%                              |
 | ------------------------------------- | ------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------- |
-| ![Tray Red](screenshots/tray-red.png) | ![Battery Low](screenshots/notify-plug-in-20.png) | ![Still 20%](screenshots/notify-still-at-20.png) | ![Disconnected](screenshots/notify-disconnected.png) |
+| ![Tray Red](screenshots/tray-red.png) | ![Battery Low](screenshots/notify-plug-in-25.png) | ![Still 25%](screenshots/notify-still-at-25.png) | ![Disconnected](screenshots/notify-disconnected.png) |
 
 | Tray Icon (Charging)                      | Battery Full @ 80%                                   | Still Charging @ 80%                             | Charger Connected                              |
 | ----------------------------------------- | ---------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
